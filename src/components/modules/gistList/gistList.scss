@@ -1,0 +1,83 @@
+.gists-grid {
+  border: 2px solid #f1f1f1;
+  margin: 20px;
+  padding: 15px;
+  font-size: 16px;
+}
+.gist-info-svg {
+  margin-right: 10px;
+  fill: #808080;
+}
+.url-desktop {
+  display: none;
+}
+
+.gists-file-tags {
+  display: inline-flex;
+  margin: -5px 0 5px;
+  p {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #efefef;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+.fork-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  .view-fork {
+    border: 1px solid #f6f8fa;
+    background-color: #b3b8bd47;
+    padding: 5px;
+    margin-right: 20px;
+
+    & svg {
+      fill: #6a737d;
+    }
+  }
+}
+.fork-user-info {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  font-size: 16px;
+  & div {
+    display: inline-flex;
+  }
+  .user-name {
+    margin-top: 5px;
+  }
+  & img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gists-grid {
+    font-size: 18px;
+    .gist-info {
+      display: inline-flex;
+      .gist-info-svg {
+        margin: 20px 10px 0 0;
+      }
+      .url-desktop {
+        display: block;
+      }
+      .url-mobile {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 360px) {
+  .gist-count,
+  .gist-svg {
+    display: none;
+  }
+}
